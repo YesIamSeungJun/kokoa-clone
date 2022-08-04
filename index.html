@@ -29,12 +29,19 @@
 
     <header class = "welcome-header">
         <h1 class = "welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class = "welcome-header__text">If you have a Kokoa Account, log in with your email or phone number. </p>
+        <p class = "welcome-header__text">If you have a Kokoa Account, <br> log in with your email or phone number. </p>
     </header>
+<!-- 액션 은 어떤 페이지로 데이터 보내는지 
+메소드 사용 
+post는 백엔드 서버에 전송 
+get 방식 사용
+get 방식은 보안상 가끔 사용하기 좋음 서버가 없을 때 
 
-    <form id ="login-form"> 
-        <input type="text" placeholder = "Email or phone number " />
-        <input type="password" placeholder = "password" />
+-->
+
+    <form action="friends.html" method = "get" id ="login-form"> 
+        <input name="username" type="text" placeholder = "Email or phone number " />
+        <input name="password" type="password" placeholder = "password" />
         <input type="submit" value="Log In" />
         <a href="#"> Find Kokoa Account or password </a>
     </form>
